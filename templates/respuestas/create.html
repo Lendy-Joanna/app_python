@@ -1,0 +1,176 @@
+{% include 'header.html' %}
+<h1>
+    <center>
+        <a style="color:#2E1034; text-align:center; margin-left: 15%; font-family: 'Edu NSW ACT Foundation', cursive;">
+            ❂ Descubre a que grupo de signos zodiacales perteneces ❂
+        </a>
+    </center>
+</h1>
+</div>
+<br>
+<div class="container" style="border: inset; width:50%; text-align:left;">
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+        <br>
+        <label for="optimistaR"><b>¿Te consideras una persona optimista?<b></label>
+        <br><br>
+        <select name="optimistaR" id="optimistaR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+        <label for="pesimistaR">¿Te consideras una persona pesimista?</label>
+        <br><br>
+        <select name="pesimistaR" id="pesimistaR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="confianzaR"><b>¿Qué tanta confianza tienes en ti mismo?<b></label>
+        <br><br>
+        <select name="confianzaR" id="confianzaR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+
+        <label for="atencionR">¿Eres de las personas que necesitan que se les preste atención?</label>
+        <br><br>
+        <select name="atencionR" id="atencionR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="afectoR">¿Te gusta el afecto físico?</label>
+        <br><br>
+        <select name="afectoR" id="afectoR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="extrovertidaR">¿Consideras que tu personalidad es extrovertida?</label>
+        <br><br>
+        <select name="extrovertidaR" id="extrovertidaR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="introvertidaR">¿Consideras que tu personalidad es introvertida?</label>
+        <br><br>
+        <select name="introvertidaR" id="introvertidaR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="inteligenteR">¿Te consideras una persona inteligente?</label>
+        <br><br>
+        <select name="inteligenteR" id="inteligenteR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="deprimeR">¿Te deprimes fácilmente?</label>
+        <br><br>
+        <select name="deprimeR" id="deprimeR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="fiestaR">Cuando sales a divertirte, ¿Crees que eres el alma de la fiesta?</label>
+        <br><br>
+        <select name="fiestaR" id="fiestaR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="fisicoR">¿Confías en tu aspecto físico?</label>
+        <br><br>
+        <select name="fisicoR" id="fisicoR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+        <label for="ejercicioR">¿Haces ejercicio?</label>
+        <br><br>
+        <select name="ejercicioR" id="ejercicioR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="solitariaR">¿Eres una persona solitaria?</label>
+        <br><br>
+        <select name="solitariaR" id="solitariaR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="viajarR">¿Te gusta viajar?</label>
+        <br><br>
+        <select name="viajarR" id="viajarR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+        <label for="estacionR">¿Cuál es tu estación favorita del año?</label>
+        <br><br>
+        <select name="estacionR" id="estacionR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">Primavera</option>
+            <option value="1">Verano</option>
+            <option value="2">Otoño</option>
+            <option value="3">Invierno</option>
+        </select>
+        <br>
+
+        <label for="emprendedorR">¿Te consideras emprendedor?</label>
+        <br><br>
+        <select name="emprendedorR" id="emprendedorR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">No</option>
+            <option value="1">Si</option>
+        </select>
+        <br>
+
+        <label for="elementoR">¿Con cuál elemento te identificas más?</label>
+        <br><br>
+        <select name="elementoR" id="elementoR" class="form-select form-select-sm">
+            <option selected> Seleccione...</option>
+            <option value="0">Agua</option>
+            <option value="1">Aire</option>
+            <option value="2">Tierra</option>
+            <option value="3">Fuego</option>
+        </select>
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit" onClick="window.location.href='/predict'">Guardar</button>
+        <br>
+    </form>
+
+    {% include 'footer.html' %}

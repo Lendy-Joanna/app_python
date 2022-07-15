@@ -1,0 +1,89 @@
+{% include 'header.html' %}
+<center>
+    <h1 style="color:blue; text-align:center; margin-left:200px">Resultados</h1>
+</center>
+<a class="navbar-brand" href="/exp" method="GET">
+    <img src="../../static/images/sobresalir.png" alt="" width="40px" margin-right: "80px" class="d-inline-block align-text-top">
+</a>
+<a class="navbar-brand" href="/k-means" margin-top:"900%">
+    <img src="../../static/images/grafico.png"alt="" width="40px" margin-right: "30px"  class="d-inline-block align-text-top">
+</a>
+<hr style="color: black; background-color: black; width:130%;" /> 
+<table id="respuesta" class="table display" style="width:100%">
+    <thead>   
+        <tr>
+            <th>#</th>
+            <th>Optimista</th>
+            <th>Pesimista</th>
+            <th>Confianza</th>
+            <th>Atención</th>
+            <th>Afecto</th>
+            <th>Extrovertido</th>
+            <th>Introvertido</th>
+            <th>Inteligente</th>
+            <th>Deprimente</th>
+            <th>Amigable</th>
+            <th>Físico</th>
+            <th>Ejercicio</th>
+            <th>Solitaria</th>
+            <th>Viajes</th>
+            <th>Estación</th>
+            <th>Emprendedor</th>
+            <th>Elemento</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for respuesta in respuestas %}
+        <tr>
+            <td>{{respuesta[0]}}</td>
+            <td>{{respuesta[1]}}</td>
+            <td>{{respuesta[2]}}</td>
+            <td>{{respuesta[3]}}</td>
+            <td>{{respuesta[4]}}</td>
+            <td>{{respuesta[5]}}</td>
+            <td>{{respuesta[6]}}</td>
+            <td>{{respuesta[7]}}</td>
+            <td>{{respuesta[8]}}</td>
+            <td>{{respuesta[9]}}</td>
+            <td>{{respuesta[10]}}</td>
+            <td>{{respuesta[11]}}</td>
+            <td>{{respuesta[12]}}</td>
+            <td>{{respuesta[13]}}</td>
+            <td>{{respuesta[14]}}</td>
+            <td>{{respuesta[15]}}</td>
+            <td>{{respuesta[16]}}</td>
+            <td>{{respuesta[17]}}</td>
+            <td><a href="/destroy/{{respuesta[0]}}">
+                <button type="button" class="btn btn-danger">Eliminar</button></a></td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+<nav aria-label="..." style="margin-left:600px">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item" aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Siguiente</a>
+      </li>
+    </ul>
+  </nav>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $('#respuesta').DataTable({
+                responsive: true
+            });
+        }, 500);
+    });
+</script>
+
+{% include 'footer.html' %}

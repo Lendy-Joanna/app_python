@@ -1,0 +1,100 @@
+{% include 'header.html' %}
+{% if result_value3 %}
+<div class="prediction card" style="margin-top: 4%; margin-left: 35%; position:absolute;">
+    <div class="card border-primary" style="text-align:center ;"><h3>Predicción KMeans</h3> </div>
+    <img src="../../static/images/fuego.jpg" alt="" width="550px"  style="text-align:center;" >
+    <div class="top-heading card-body">
+        <h5 style="text-align:center;color:#FF5733;">Elemento: Fuego</h5>
+        <b>
+            {{ result_value3 }}
+        </b>
+        <br> <br> 
+        <h6 >En este grupo de signos se encuentran: <h6>
+          <li>Aries </li>
+          <li> Leo </li>
+          <li> Sagitario</li>
+          <br>
+           <p>Estos signos se identifican por ser impulsivos, vehementes y enérgicos <p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <br>
+                 <a button class="btn btn-primary" type="button" href="/create">Regresar</a>
+               </div>
+    </div>
+</div>
+{% endif %}
+
+{% if result_value2 %}
+<div class="prediction card" style="margin-top: 4%; margin-left: 35%; position:absolute;">
+    <div class="card border-primary" style="text-align:center ;"><h3>Predicción KMeans</h3></div>
+    <img src="../../static/images/tierra.jpg" alt="" width="550px"  style="text-align:center;" >
+    <div class="top-heading card-body">
+        <h5 style="text-align:center;color:#6E666F;">Elemento: Tierra</h5>
+        <b>
+            {{ result_value2 }}
+        </b>
+        <br> <br> 
+        <h6 >En este grupo de signos se encuentran: <h6>
+          <li>Tauro </li>
+          <li> Virgo </li>
+          <li> Capricornio  </li>
+          <br>
+          <p>Estos signos suelen ser muy realistas, materialistas y pacientes.<p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <br>
+                 <a button class="btn btn-primary" type="button" href="/create">Regresar</a>
+               </div>
+    </div>
+</div>
+{% endif %}
+
+{% if result_value1 %}
+<div class="prediction card" style="margin-top: 4%; margin-left: 35%; position:absolute;">
+    <div class="card border-primary" style="text-align:center ;"><h3>Predicción KMeans</h3></div>
+    <img src="../../static/images/aire.jpg" alt="" width="550px"  style="text-align:center;" >
+    <div class="top-heading card-body">
+        <h5 style="text-align:center;color:#3CB1CB ;">Elemento: Aire</h5>
+        <b>
+            {{ result_value1 }}
+        </b>
+        <br> <br> 
+            <h6 >En este grupo de signos se encuentran: <h6>
+              <li>Géminis </li>
+              <li> Libra </li>
+              <li> Acuario </li>
+              <br>
+        <p>Estos signos suelen ser muy inteligentes, comunicativos y adaptables.<p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <br>
+                 <a button class="btn btn-primary" type="button" href="/create">Regresar</a>
+               </div>
+    </div>
+</div>
+{% endif %}
+
+{% if result_value0 %}
+<div class="prediction card" style="margin-top: 4%; margin-left: 35%; position:absolute;">
+    <div class="card border-primary" style="text-align:center ;"><h3>Predicción KMeans</h3></div>
+    <img src="../../static/images/agua.jpg" alt="" width="550px"  style="text-align:center;" >
+    <div class="top-heading card-body">
+        <h5 style="text-align:center;color:#3CB1CB ;">Elemento: Agua</h5>
+        <br>
+        <b>
+            {{ result_value0 }}
+        </b>
+        <br> <br> 
+            <h6 >En este grupo de signos se encuentran: <h6>
+              <li>Cáncer</li>
+              <li> Escorpio </li>
+              <li> Picis</li>
+              <br>
+            <p>Estos signos se identifican por ser soñadores, sensibles y emocionales<p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                   <br>
+                    <a button class="btn btn-primary" type="button" href="/create">Regresar</a>
+                  </div>
+               
+            </div>
+</div>
+
+<br><br><br>
+{% endif %}
